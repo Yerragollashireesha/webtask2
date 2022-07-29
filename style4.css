@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 90%;
+    height: 95vh;
+    position:inherit;
+    background:url(img/bg1.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 89px;
+}
+.logo{
+    max-height: 65px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 25px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 7px 0;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #fd4766;
+    transition: .4s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 95%;
+}
+.btn{
+    color: #123456;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 18px 35px;
+    border-radius: 510px;
+    display :inline-block;
+    font-weight: 520;
+    transition: all .30s ease-in-out;
+    background-size: 150% 100%;
+    background: #fd4;
+    border: 3px solid #fd4766;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #fd4766;
+    color: #fd4766;
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 9%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-bottom: 25px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 80px;
+    font-weight: 910;
+    line-height: 93px;
+    text-transform: inherit;
+    width: 75%;
+}
+.content h1 span{
+    color: #fd4766;
+}
+.content p{
+    width: 55%;
+    color: #757575;
+    margin-top: 23px;
+    margin-bottom: 25px;
+}
